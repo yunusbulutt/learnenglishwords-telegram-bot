@@ -7,10 +7,10 @@ import (
 	"log"
 	"math/rand"
 	"os"
-	"time"
 	"strconv"
-	
-	"github.com/go-telegram-bot-api/telegram-bot-api"
+	"time"
+
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 const (
@@ -20,8 +20,8 @@ Using the "/send" command, you can view 1 to 5 words that we randomly selected f
 
 Example: "/send 3"`
 
-	unknown_command	= `Command is not found. Check "/help".`
-  wrong_range = `The argument must be between 1 and 5.`	
+	unknown_command = `Command is not found. Check "/help".`
+	wrong_range     = `The argument must be between 1 and 5.`
 )
 
 type Words struct {
